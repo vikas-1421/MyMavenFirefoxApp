@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/vikas-1421/MyMavenFirefox.git'
+                url: 'https://github.com/vikas-1421/MyMavenFirefoxApp.git'
             }
         }
 
@@ -36,7 +36,7 @@ pipeline {
     post {
 
         success {
-            echo 'MyMavenSeleniumApp04 Build Successful'
+            echo 'MyMavenFirefoxApp Build Successful'
         }
 
         failure {
